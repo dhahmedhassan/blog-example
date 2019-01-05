@@ -6,6 +6,7 @@
         <hr>
         
         <form method="POST" action="/posts">
+            {{ csrf_field() }}
             <div class="form-group">
                 <label for="title" class="form-label">Title:</label>
                 <input type="text" class="form-control" id="title" name="title">
