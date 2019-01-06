@@ -25,6 +25,11 @@ class PostsController extends Controller
     public function store()
     {
         
+        $this->validate(request(), [
+            'title' => 'required|min:20',
+            'body' => 'required'
+        ]);
+
         Post::create(request(['title', 'body']));
 
         // Redirects to somewhere - Home Page -
