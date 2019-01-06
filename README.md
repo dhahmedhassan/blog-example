@@ -12,7 +12,7 @@ This blog has a CRUD functionality .. You can add Posts and and show them separa
 
 ### Misc
 
-Step 2: MySQL setup
+### Step 2: MySQL setup
 
  * Create a database and database user using the values set in the .env file (Or change the values in the .env file as these are unique to your environment)
 
