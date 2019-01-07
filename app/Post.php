@@ -18,5 +18,8 @@ class Post extends Model
         //     'post_id' => $this->id
         // ]);
     }
-
+    public function user() // $post->user->name // to select the user 
+    {
+        return $this->belongsTo(User::class);
+    }
 }
