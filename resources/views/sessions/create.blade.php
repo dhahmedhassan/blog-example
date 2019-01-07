@@ -24,9 +24,17 @@
                   <input type="password" class="form-control" name="password" id="password" placeholder="">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Register</button>
+                <div class="form-group">
+                  <label for="password_confirmation">Password Confirmation</label>
+                  <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" placeholder="">
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                @include('layouts.msgs') 
+
             </form>
 
-            {{-- @include('layouts.msgs')  --}}
     </div>
 @endsection
