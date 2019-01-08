@@ -42,12 +42,6 @@ class PostsController extends Controller
             new Post(request(['title', 'body']))
         );
 
-        Post::create([
-            'title' => request('title'),
-            'body' => request('body'),
-            'user_id' => auth()->id()
-            ]);
-
         // Redirects to somewhere - Home Page -
 
         return redirect('/');
